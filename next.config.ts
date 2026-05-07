@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-/** Ohne führenden Slash, z. B. `SAMPLE` für https://user.github.io/SAMPLE/ (GitHub Actions setzt Repo-Name) */
+/** Ohne führenden Slash, z. B. `daum-architekten` für https://user.github.io/daum-architekten/ (GitHub Actions setzt Repo-Name automatisch) */
 function normalizeBasePath(raw: string | undefined): string {
   if (!raw) return "";
   const trimmed = raw.trim().replace(/^\/+|\/+$/g, "");
