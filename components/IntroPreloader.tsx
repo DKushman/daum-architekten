@@ -218,7 +218,7 @@ export function IntroPreloader({
             id="intro-preloader-headline"
             className="split max-w-[100vw] font-sans font-black uppercase leading-[0.9] tracking-tighter text-white [font-size:clamp(1.75rem,8vw,9.5rem)]"
           >
-            BauWerke
+            Daum Architekten
           </h1>
         </div>
       </div>
