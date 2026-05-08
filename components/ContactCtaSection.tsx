@@ -17,14 +17,14 @@ type ContactCtaSectionProps = {
 
 export function ContactCtaSection({
   id = "site-contact-cta-section",
-  email = "studio@mars-berlin.com",
+  email = "office@daumarchitekten.com",
   headingBoldStart = "Wir freuen uns",
   headingLight = "auf Ihre",
   headingBoldEnd = "Nachricht.",
-  phoneLine = "+49 30 200 59 400",
-  applicationsLine = "apply@mars-berlin.com",
+  phoneLine = "+49 (0) 30 23 25 807 00",
+  applicationsLine = "apply@daumarchitekten.com",
   buttonLabel = "Kontakt aufnehmen",
-  buttonHref = "mailto:studio@mars-berlin.com",
+  buttonHref = "mailto:office@daumarchitekten.com",
   className = "",
 }: ContactCtaSectionProps) {
   return (

@@ -14,12 +14,11 @@ import { gsap, SplitText } from "@/lib/gsap-client";
 import { HEADER_SHELL_IN_DURATION_S } from "@/lib/heroRevealTiming";
 
 const MENU_LINKS = [
-  { id: "menu-link-profil", label: "Profil", href: "#profil-section" },
-  { id: "menu-link-blog", label: "Blog", href: "#blog-section" },
+  { id: "menu-link-profil", label: "Home", href: "#profil-section" },
+  { id: "menu-link-blog", label: "Team", href: "#blog-section" },
   { id: "menu-link-projekte", label: "Projekte", href: "#projekte-section" },
-  { id: "menu-link-kunden", label: "Kunden", href: "#kunden-section" },
-  { id: "menu-link-kontakt", label: "Kontakt", href: "#site-contact-cta-section" },
-  { id: "menu-link-english", label: "English", href: "#english-section" },
+  { id: "menu-link-kunden", label: "Datenschutz", href: "#kunden-section" },
+  { id: "menu-link-kontakt", label: "Impressum", href: "#site-contact-cta-section" },
 ] as const;
 
 type SplitTextInstance = InstanceType<typeof SplitText>;
@@ -31,7 +30,7 @@ type SiteHeaderProps = {
 };
 
 export function SiteHeader({
-  contactHref = "mailto:info@bauwerke.org",
+  contactHref = "mailto:office@daumarchitekten.com",
   introDone = false,
   reducedMotion = false,
 }: SiteHeaderProps) {
@@ -284,7 +283,7 @@ export function SiteHeader({
                 "focus-visible:after:scale-x-100"
               }
             >
-              info@bauwerke.org
+              office@daumarchitekten.com
             </Link>
           </nav>
         </div>

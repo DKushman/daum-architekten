@@ -13,26 +13,26 @@ import { publicAssetPath } from "@/lib/publicAssetPath";
 import { HeroHeadline } from "@/components/HeroHeadline";
 import { IntroPreloader } from "@/components/IntroPreloader";
 import { SiteHeader } from "@/components/SiteHeader";
-import { StackedCardsShowcase } from "@/components/StackedCardsShowcase";
+// import { StackedCardsShowcase } from "@/components/StackedCardsShowcase";
 import { TeamSection } from "@/components/TeamSection";
 import { SiteFooterReveal } from "@/components/SiteFooterReveal";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { PillArrowButton } from "@/components/PillArrowButton";
 
-/** Sticky cards: Inhalte/Bilder aus ausgewählten Projektseiten von bauwerke.org. */
+/** Sticky cards: Inhalte/Bilder aus ausgewählten Projektseiten von daumarchitekten.com. */
 const PROJECT_IMAGES = {
-  amazonEntwicklungszentrumBerlin:
-    "https://bauwerke.org/wp-content/uploads/2022/10/Amazon_3576.jpg",
-  verticalVillageApartmentsLeipzig:
-    "https://bauwerke.org/wp-content/uploads/2022/11/Bild01.jpg",
-  landesvertretungBayernBerlin:
-    "https://bauwerke.org/wp-content/uploads/2022/11/IMG_5760-scaled-1.jpg",
-  wohnhausImGruenenBerlin:
-    "https://bauwerke.org/wp-content/uploads/2022/11/Bild04-3.jpg",
+  anklamerStrasse:
+    "https://static.wixstatic.com/media/a32e4f_a205ec512d7640348097267f2a591793~mv2.jpg",
+  torstrasse:
+    "https://static.wixstatic.com/media/a32e4f_cac4ae1c1aa74d8eb9918715ea199fce~mv2.jpg",
+  kantstrasse:
+    "https://static.wixstatic.com/media/a32e4f_67193c58015f4e35a557231cee694e2c~mv2.jpg",
+  matterhornstrasse:
+    "https://static.wixstatic.com/media/a32e4f_47920c7201574135b401fd0735b7c22f~mv2.jpg",
 } as const;
 
-/** Hero: BauWerke Referenzmotiv. */
-const HERO_IMAGE_SRC = publicAssetPath("/bauwerke-hero.jpg");
+/** Hero: Daum Architekten Referenzmotiv. */
+const HERO_IMAGE_SRC = publicAssetPath("https://static.wixstatic.com/media/a32e4f_04446c253c324448961d7bf14bd557e5~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,enc_avif,quality_auto/a32e4f_04446c253c324448961d7bf14bd557e5~mv2.jpg");
 /** Alias — gleiche URL wie `HERO_IMAGE_SRC` (<picture>/<source>). */
 const MOBILE_HERO_SRC = HERO_IMAGE_SRC;
 
@@ -67,52 +67,52 @@ type ProfilPillar = {
   iconPaths: string[];
 };
 
-/** Projekt-Highlights aus vier konkreten bauwerke.org Projektseiten. */
+/** Projekt-Highlights aus vier konkreten daumarchitekten.com Projektseiten. */
 const STICKY_STORY_STEPS: StickyStoryStep[] = [
   {
-    id: "amazon-entwicklungszentrum-berlin",
+    id: "314-anklamer-strasse",
     step: "01",
-    title: "Amazon Entwicklungszentrum Berlin",
+    title: "314_Anklamer Straße",
     description:
-      "BauWerke stellte in Kooperation mit HOK London den mieterspezifischen Innenausbau des denkmalgeschützten ehemaligen Kaufhaus Hertzog fertig.",
-    imageSrc: PROJECT_IMAGES.amazonEntwicklungszentrumBerlin,
-    imageAlt: "Amazon Entwicklungszentrum Berlin.",
+      "Sanierung und Umbau eines Industriegeschosses zu einem Wohnloft mit puristischem Berlin-Charme, wiederverwendeten historischen Elementen und industriellen Details.",
+    imageSrc: PROJECT_IMAGES.anklamerStrasse,
+    imageAlt: "Projekt 314_Anklamer Straße von Daum Architekten.",
   },
   {
-    id: "vertical-village-apartments-leipzig",
+    id: "354-torstrasse",
     step: "02",
-    title: "Vertical Village Apartments Leipzig",
+    title: "354_Torstraße",
     description:
-      "In Leipzig entsteht ein innovatives Nutzungskonzept mit Vertical Village Apartments und Community-Flächen im umgebauten Technischen Rathaus.",
-    imageSrc: PROJECT_IMAGES.verticalVillageApartmentsLeipzig,
-    imageAlt: "Vertical Village Apartments Leipzig.",
+      "Entwurf eines Loftumbaus mit entferntem Trennwandsystem und einem hängenden Bücherregal als räumlichem Filter zwischen Arbeits- und Wohnbereich.",
+    imageSrc: PROJECT_IMAGES.torstrasse,
+    imageAlt: "Projekt 354_Torstraße von Daum Architekten.",
   },
   {
-    id: "landesvertretung-bayern-berlin",
+    id: "298-kantstrasse",
     step: "03",
-    title: "Landesvertretung Bayern, Berlin",
+    title: "298_Kantstraße",
     description:
-      "BauWerke gestaltete Besprechungs-, Konferenz- und Versammlungsräume sowie ausgewählte Büros für die Bayerische Landesvertretung neu.",
-    imageSrc: PROJECT_IMAGES.landesvertretungBayernBerlin,
-    imageAlt: "Landesvertretung Bayern, Berlin.",
+      "Ausbau des Dachgeschosses im Hinterhaus und Seitenflügel mit Aufzugsanbau sowie Realisierung flexibel nutzbarer Büroeinheiten mit möglicher Loft-Umnutzung.",
+    imageSrc: PROJECT_IMAGES.kantstrasse,
+    imageAlt: "Projekt 298_Kantstraße von Daum Architekten.",
   },
   {
-    id: "wohnhaus-im-gruenen-berlin",
+    id: "381-matterhornstrasse",
     step: "04",
-    title: "Wohnhaus im Grünen, Berlin",
+    title: "381_Matterhornstraße",
     description:
-      "Neubau eines Einfamilienwohnhauses mit den Leistungen Entwurf, Planung und Bauüberwachung.",
-    imageSrc: PROJECT_IMAGES.wohnhausImGruenenBerlin,
-    imageAlt: "Wohnhaus im Grünen, Berlin.",
+      "Komplettsanierung eines historischen Landhauses mit behutsamer Transformation, räumlicher Neuordnung und technischer Erneuerung inklusive PV, Wärmepumpe und KNX.",
+    imageSrc: PROJECT_IMAGES.matterhornstrasse,
+    imageAlt: "Projekt 381_Matterhornstraße von Daum Architekten.",
   },
 ];
 
 const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   {
     id: "neugier",
-    title: "Neugier und Vielfalt",
+    title: "Bestand mit Zukunft",
     description:
-      "Wir arbeiten seit über fünfzehn Jahren an typologisch vielfältigen Projekten und freuen uns auf jede neue Aufgabe.",
+      "Wir transformieren Bestand präzise und respektvoll, damit Architektur langfristig nutzbar, wertig und lebendig bleibt.",
     iconTitle: "Vielfalt",
     iconPaths: [
       "M12 12m-7.5 0a7.5 7.5 0 1 0 15 0a7.5 7.5 0 1 0 -15 0",
@@ -123,9 +123,9 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   },
   {
     id: "zukunft",
-    title: "Zukunftsfähigkeit",
+    title: "Klare Entwurfshaltung",
     description:
-      "Die Zukunftsfähigkeit eines Projektes steht für unser gesamtes Team immer im Vordergrund.",
+      "Reduzierte Formensprache, sorgfältige Proportionen und materialgerechte Details bilden den Kern unserer Entwurfsarbeit.",
     iconTitle: "Zukunft",
     iconPaths: [
       "M6.5 4.5h8l3 3v11h-11z",
@@ -135,9 +135,9 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   },
   {
     id: "nachhaltigkeit",
-    title: "Ganzheitliche Nachhaltigkeit",
+    title: "Nachhaltig gedacht",
     description:
-      "Über ökologisch-energetische Aspekte hinaus erreichen wir sie durch Raum, Struktur und Material.",
+      "Nachhaltigkeit verstehen wir ganzheitlich - ökologisch, funktional und kulturell - vom Konzept bis in die Realisierung.",
     iconTitle: "Nachhaltigkeit",
     iconPaths: [
       "M12 4.5s-5.6 2.2-7.5 4.3c0 5.2 3.3 8.6 7.5 10.7c4.2-2.1 7.5-5.5 7.5-10.7C17.6 6.7 12 4.5 12 4.5z",
@@ -146,9 +146,9 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   },
   {
     id: "flexibel",
-    title: "Flexible Grundrisse",
+    title: "Räume mit Haltung",
     description:
-      "Vielseitig nutzbare Tragwerke und Strukturen für langfristig nutzbare Gebäude.",
+      "Wir entwickeln Räume, die zugleich klar organisiert und atmosphärisch sind - für Wohnen, Arbeiten und öffentliche Nutzungen.",
     iconTitle: "Flexibilität",
     iconPaths: [
       "M12 4v8l5.2 3",
@@ -157,9 +157,9 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   },
   {
     id: "robust",
-    title: "Struktur und Material",
+    title: "Sorgfalt im Detail",
     description:
-      "Redundante Erschließungen und der Einsatz dauerhafter Materialien sichern Robustheit.",
+      "Von Materialübergängen bis Lichtführung entstehen durch präzise Detaillierung robuste und zeitlose Architekturen.",
     iconTitle: "Material",
     iconPaths: [
       "M7 7h.01",
@@ -172,9 +172,9 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
   },
   {
     id: "aesthetik",
-    title: "Ästhetische Nachhaltigkeit",
+    title: "Berliner Kontext",
     description:
-      "Architektur verstehen wir als Weg zu einer ästhetischen Nachhaltigkeit mit beständigem gesellschaftlichen Wert.",
+      "Unsere Projekte reagieren auf den Ort, den städtischen Maßstab und die Geschichte des Bestands - mit zeitgemäßen Lösungen.",
     iconTitle: "Ästhetik",
     iconPaths: [
       "M12 3.5l2.6 5.2l5.7.8l-4.1 4l1 5.7L12 16.4l-5.2 2.8l1-5.7l-4.1-4l5.7-.8z",
@@ -581,7 +581,7 @@ export function LandingPage() {
       <IntroPreloader skip={reducedMotion} onIntroReady={handleIntroDone} />
 
       <SiteHeader
-        contactHref="mailto:studio@mars-berlin.com"
+        contactHref="mailto:office@daumarchitekten.com"
         introDone={introDone}
         reducedMotion={reducedMotion}
       />
@@ -610,7 +610,7 @@ export function LandingPage() {
                     (hideChrome ? "opacity-0" : "")
                   }
                 >
-                  Architektur und Stadtplanung in Berlin
+                  Daum Architekten - Berlin
                 </h1>
 
                 <figure
@@ -656,7 +656,9 @@ export function LandingPage() {
             id="hero-section-copy"
             className="split ml-auto px-[clamp(1rem,4vw,2.5rem)] pb-[clamp(1rem,2.5vw,1.75rem)] pt-[clamp(1.5rem,4vw,3rem)] lg:pt-[clamp(3.5rem,7vw,6rem)] max-w-[30ch] text-left font-sans text-[clamp(1.5rem,3.4vw,3.3rem)] leading-[1.08] tracking-tight text-black"
           >
-            BauWerke bildet eine Plattform, auf der sich Kreativität und Innovation mit fundiertem Fachwissen aus unterschiedlichen, sich ergänzenden Bereichen zusammenfinden, gegenseitig befruchten und neue Qualitäten in der Konzeption, Planung und Betreuung von Bauwerken erschließen.
+            Daum Architekten verbindet präzise Planung mit poetischer
+            Raumwirkung - von der ersten Idee bis zur gebauten Architektur, die
+            Orte mit Charakter schafft.
           </p>
         </section>
 
@@ -881,13 +883,13 @@ export function LandingPage() {
                 id="profil-section-heading"
                 className="font-sans text-[clamp(1.7rem,4.2vw,3.35rem)] font-semibold leading-[1.04] tracking-tight text-black"
               >
-                Architektur mit Verantwortung
+                Profil von Daum Architekten
               </h2>
               <p
                 id="profil-section-intro"
                 className="mx-auto mt-[clamp(0.8rem,2vw,1.4rem)] max-w-[62ch] font-sans text-[clamp(0.95rem,1.5vw,1.12rem)] leading-[1.45] text-black/80"
               >
-                Als Verbund aus Architekten, Ingenieuren, Stadtplanern und Designern sind wir professioneller Partner für Architektur, Generalplanung und Projektmanagement.
+                Daum Architekten entwickelt Umbau-, Sanierungs- und Neubauprojekte mit einem klaren Fokus auf Bestand, Präzision und zeitlose Materialität.
               </p>
             </header>
 
@@ -961,13 +963,13 @@ export function LandingPage() {
                     id="profil-section-heading"
                     className="font-sans text-[clamp(1.7rem,4.2vw,3.35rem)] font-semibold leading-[1.04] tracking-tight text-black"
                   >
-                    Architektur mit Verantwortung
+                    Profil von Daum Architekten
                   </h2>
                   <p
                     id="profil-section-intro"
                     className="mx-auto mt-[clamp(0.8rem,2vw,1.4rem)] max-w-[62ch] font-sans text-[clamp(0.95rem,1.5vw,1.12rem)] leading-[1.45] text-black/80"
                   >
-                Als Verbund aus Architekten, Ingenieuren, Stadtplanern und Designern sind wir professioneller Partner für Architektur, Generalplanung und Projektmanagement.
+                Daum Architekten entwickelt Umbau-, Sanierungs- und Neubauprojekte mit einem klaren Fokus auf Bestand, Präzision und zeitlose Materialität.
                 </p>
                 </header>
 
@@ -1031,7 +1033,7 @@ export function LandingPage() {
           </section>
         )}
 
-        <StackedCardsShowcase reducedMotion={reducedMotion} />
+        {/* <StackedCardsShowcase reducedMotion={reducedMotion} /> */}
         <TeamSection />
         <ContactCtaSection />
       </main>

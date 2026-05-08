@@ -9,6 +9,8 @@ import { useGSAP } from "@gsap/react";
 const HERO_STAGGER_S = 0.1;
 
 const headline = "ARCHITEKTEN UND GENERALPLANER";
+const HERO_BG_IMAGE =
+  "https://static.wixstatic.com/media/a32e4f_96807dd63da34c1588a0a0a89fe66065~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,enc_avif,quality_auto/a32e4f_96807dd63da34c1588a0a0a89fe66065~mv2.jpg";
 
 function LogoMark() {
   return (
@@ -112,17 +114,23 @@ export default function StudioHero() {
       ref={rootRef}
       className="relative isolate min-h-[100dvh] w-full overflow-hidden"
     >
-      <div
-        className="absolute inset-0 bg-[#722F37]"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0" aria-hidden="true">
+        <img
+          src={HERO_BG_IMAGE}
+          alt=""
+          className="h-full w-full object-cover object-center"
+          loading="eager"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-black/35" />
+      </div>
 
       <div className="relative z-10 flex min-h-[100dvh] flex-col px-5 pb-10 pt-6 sm:px-8 sm:pb-14 sm:pt-8">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="nav-reveal flex items-center gap-3">
             <LogoMark />
             <span className="font-sans text-sm font-medium tracking-wide text-white">
-              BauWerke
+              Daum Architekten
             </span>
           </div>
 
@@ -186,8 +194,8 @@ export default function StudioHero() {
               Profil
             </p>
             <p className="max-w-md font-sans text-sm leading-relaxed text-white/90 sm:text-base">
-              BauWerke arbeitet seit ueber fuenfundzwanzig Jahren erfolgreich
-              fuer Kunden in Deutschland, Europa, Asien und den USA.
+              Daum Architekten entwickelt zeitlose Architektur mit klarem
+              Fokus auf Raumqualität, Materialität und nachhaltige Wirkung.
             </p>
           </div>
 

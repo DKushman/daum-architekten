@@ -13,42 +13,68 @@ type TeamMember = {
   imageSrc: string;
 };
 
-/** Erste fünf Teammitglieder inkl. Portraits von mars-berlin.com/TEAM. */
+/** Teammitglieder inkl. Portraits von daumarchitekten.com/team. */
 const TEAM_MEMBERS: TeamMember[] = [
   {
-    id: "philip-rieseberg",
-    name: "Philip Rieseberg",
-    role: "Dipl.-Ing. Architekt · Geschäftsführer",
+    id: "britta-daum",
+    name: "Britta Daum",
+    role: "Dipl.-Ing. Architektin · Gründungspartner",
     imageSrc:
-      "https://freight.cargo.site/w/400/q/75/i/3967bfc7c237acc67c08523e815fed04a3700952593b59c991691d52a927e53b/OFX-X-MARS-230131-jk-portrait-3245.jpg",
+      "https://static.wixstatic.com/media/a32e4f_cf23570599c24315a76e31cdb9ad672b~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Britta-IMG_0305.jpg",
+  },
+
+
+
+  {
+    id: "daniel-jaramillo",
+    name: "Daniel Jaramillo",
+    role: "M.A. Architecture · Projektarchitekt Ecuador",
+    imageSrc:
+      "https://static.wixstatic.com/media/a32e4f_bd56cd525da94884937681a21d9da329~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_DSF7282_edited.jpg",
   },
   {
-    id: "tarek-massalme",
-    name: "Tarek Massalme",
-    role: "Dipl.-Ing. Architekt - Geschäftsführer",
+    id: "sidrit-nushi",
+    name: "Sidrit Nushi",
+    role: "M. Sc. Architektur · Projektarchitekt",
     imageSrc:
-      "https://freight.cargo.site/w/500/q/75/i/4f175223d6018fdbc240be649f3a8c9ac59370797f2ea0551340d221f8efe2c6/OFX-X-MARS-230202-jk-portrait-3401.jpg",
+      "https://static.wixstatic.com/media/a32e4f_ef8b72f71c394167af6a32921cb2e394~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sidrit.jpg",
   },
   {
-    id: "jan-oliver-kunze",
-    name: "Jan-Oliver Kunze",
-    role: "Dipl.-Ing. Architekt · Geschäftsführer",
+    id: "reela-nentwich",
+    name: "Reela Nentwich",
+    role: "M.Sc. Architektur · Projektarchitektin Deutschland",
     imageSrc:
-      "https://freight.cargo.site/w/400/q/75/i/df9a47459aa746c1aeb49b8ea950389148ee7fef03b1eaa58dc852ce9a1a746f/OFX-X-MARS-230130-jk-portrait-3053.jpg",
+      "https://static.wixstatic.com/media/a32e4f_7a4b7798e65a4cb288449bda341dbf35~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/reela-bigger-3.jpg",
+  },
+
+  {
+    id: "mehmet-celal-bayram",
+    name: "Mehmet Celal Bayram",
+    role: "B.Sc. Architektur · Werkstudent",
+    imageSrc:
+      "https://static.wixstatic.com/media/a32e4f_3a270d9539304198aba0c00f32dcb1f5~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mehmet.jpg",
   },
   {
-    id: "said-tasabhji",
-    name: "Said Tasabhji",
-    role: "Bauzeichner Architektur",
+    id: "ngan-kim",
+    name: "Ngan Kim",
+    role: "B.A. Architektur · Praktikantin",
     imageSrc:
-      "https://freight.cargo.site/w/400/q/75/i/28bfacb418541db8406784fd84ebde651a70d2e4bce010ed07c3b601814807b2/OFX-X-MARS-240305-st-portrait-5672.jpg",
+      "https://static.wixstatic.com/media/a32e4f_b2ac417f9b244c1ea222143f306e9d29~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/kim.jpg",
+  },
+
+  {
+    id: "c-b",
+    name: "C. B.",
+    role: "Dipl.- Design Innenarchitektur · Projektarchitektin",
+    imageSrc:
+      "https://static.wixstatic.com/media/a32e4f_585d0fdc92064e009117868d7f0bfeb1~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/christin_team.jpg",
   },
   {
-    id: "luis-schrewe",
-    name: "Luis Schrewe",
-    role: "Architekt (AAM)",
+    id: "justus-krause",
+    name: "Justus Krause",
+    role: "M.A. Architektur · Außendarstellung & Dokumentation",
     imageSrc:
-      "https://freight.cargo.site/w/400/q/75/i/9a7c34bad0cdcb78bdf4c1032ddcef8b205df6a5356e1a9a19b658865bf0806a/OFX-X-MARS-240305-ls-portrait-5637.jpg",
+      "https://static.wixstatic.com/media/a32e4f_21486e5c3ffe4d049108c272db19af88~mv2.jpg/v1/fill/w_342,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/justus_team.jpg",
   },
 
 ];
@@ -181,7 +207,7 @@ export function TeamSection() {
       <div className="relative mt-[clamp(1.1rem,2.8vw,2.2rem)]">
         <a
           id="team-section-see-all"
-          href="https://mars-berlin.com/TEAM"
+          href="https://www.daumarchitekten.com/team"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute left-[clamp(1.4rem,5.2vw,3.2rem)] top-0 z-10 inline-block pb-1 font-sans text-xs font-normal text-black no-underline transition-opacity after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 after:ease-out motion-reduce:after:transition-none hover:opacity-70 hover:after:scale-x-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black focus-visible:after:scale-x-100"

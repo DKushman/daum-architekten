@@ -7,7 +7,7 @@ import { gsap, SplitText } from "@/lib/gsap-client";
 const WHITE_START_SCALE = 0;
 const EXPAND_DURATION_S = 0.84;
 const EXPAND_START_OFFSET_S = 0.52;
-const PRELOADER_HEADLINE_START_DELAY_S = 0.28;
+const PRELOADER_HEADLINE_START_DELAY_S = 0.06;
 const PRELOADER_HEADLINE_IN_S = 0.76;
 const PRELOADER_HEADLINE_STAGGER_S = 0.022;
 const PRELOADER_HEADLINE_TO_TARGET_S = 1.02;
@@ -55,11 +55,6 @@ export function IntroPreloader({
     let activeSplit: SplitText | null = null;
 
     const run = async () => {
-      if (typeof document !== "undefined" && document.fonts?.ready) {
-        await document.fonts.ready.catch(() => undefined);
-      }
-      if (cancelled) return;
-
       gsap.set(overlay, { autoAlpha: 1 });
       gsap.set(white, {
         scale: WHITE_START_SCALE,
@@ -190,6 +185,15 @@ export function IntroPreloader({
       ref={overlayRef}
       id={id}
       className="fixed inset-0 z-50 overflow-hidden"
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 50,
+        overflow: "hidden",
+        backgroundColor: "#000",
+        opacity: 1,
+        visibility: "visible",
+      }}
       role="status"
       aria-live="polite"
       aria-busy="true"
@@ -202,6 +206,10 @@ export function IntroPreloader({
       <div
         ref={whiteRef}
         className="absolute inset-0 origin-center bg-white will-change-transform"
+        style={{
+          transform: "scale(0)",
+          transformOrigin: "50% 50%",
+        }}
       />
 
       <div
@@ -217,6 +225,9 @@ export function IntroPreloader({
             ref={headlineRef}
             id="intro-preloader-headline"
             className="split max-w-[100vw] font-sans font-black uppercase leading-[0.9] tracking-tighter text-white [font-size:clamp(1.75rem,8vw,9.5rem)]"
+            style={{
+              opacity: 0,
+            }}
           >
             Daum Architekten
           </h1>

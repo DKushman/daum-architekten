@@ -33,27 +33,27 @@ const STACK_CARDS: StackCard[] = [
   },
   {
     id: "bauwerke-erweitert-die-fuehrung",
-    title: "BauWerke erweitert die Führung",
+    title: "Daum Architekten erweitert die Führung",
     description:
-      "Im Rahmen der kontinuierlichen Weiterentwicklung des Unternehmens wird die Führungsstruktur bei BauWerke zum 1. Januar 2026 erweitert: Ronny Möhler (2. v. l.) wurde zum Partner, Raed Albokaie (links) zum Associate Partner und Sebastian Lange (2. v. r.) zum Associate berufen.",
+      "Im Rahmen der kontinuierlichen Weiterentwicklung des Unternehmens wird die Führungsstruktur bei Daum Architekten zum 1. Januar 2026 erweitert: Ronny Möhler (2. v. l.) wurde zum Partner, Raed Albokaie (links) zum Associate Partner und Sebastian Lange (2. v. r.) zum Associate berufen.",
     bgClass: "bg-[#161616]",
     textClass: "text-white",
     imageSrc:
       "https://bauwerke.org/wp-content/uploads/2025/12/251219_BauWerke_Fuehrungsteam-scaled.jpg",
     graphicAlt:
-      "Führungsteam von BauWerke mit den neuen Führungskräften",
+      "Führungsteam von Daum Architekten mit den neuen Führungskräften",
     href: "https://bauwerke.org/de/bauwerke-erweitert-die-fuehrung/",
   },
   {
     id: "bauwerke-exzellenz-preis-2024",
-    title: "Verleihung des BauWerke Exzellenz-Preises 2024 in Berlin",
+    title: "Verleihung des Daum Architekten Exzellenz-Preises 2024 in Berlin",
     description:
-      "Am 4. Dezember wurde der BauWerke Exzellenz-Preis für die Absolventen des Fachbereichs Architektur an der Hochschule für Technik und Wirtschaft Berlin (BHT) mit den besten Bachelorarbeiten des Jahrgangs 2023/2024 in feierlichem Rahmen verliehen.",
+      "Am 4. Dezember wurde der Daum Architekten Exzellenz-Preis für die Absolventen des Fachbereichs Architektur an der Hochschule für Technik und Wirtschaft Berlin (BHT) mit den besten Bachelorarbeiten des Jahrgangs 2023/2024 in feierlichem Rahmen verliehen.",
     bgClass: "bg-[#2A2A2A]",
     textClass: "text-white",
     imageSrc:
       "https://bauwerke.org/wp-content/uploads/2024/11/BW_EP_Plakat_einzeln-scaled.jpg",
-    graphicAlt: "Plakat zur Verleihung des BauWerke Exzellenz-Preises 2024",
+    graphicAlt: "Plakat zur Verleihung des Daum Architekten Exzellenz-Preises 2024",
     href: "https://bauwerke.org/de/verleihung-des-bauwerke-exzellenz-preises-2024-in-berlin/",
   },
   {

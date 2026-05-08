@@ -129,14 +129,14 @@ export function SiteFooterReveal() {
             id="site-footer-kicker"
             className="max-w-[40ch] font-sans text-[clamp(0.72rem,1vw,0.86rem)] leading-[1.35] text-white/72 md:max-w-[32ch]"
           >
-            Gesellschaft fuer Konzeption, Planung und Betreuung von Bauwerken mbH.
+            Daum Architekten PartG mbB, Berlin - Deutschland.
           </p>
 
           <div className="w-full">
             <PillArrowButton
               id="site-footer-cta-link"
-              href="mailto:info@bauwerke.org"
-              label="E-Mail an BauWerke"
+              href="mailto:info@daumarchitekten.com"
+              label="E-Mail an Daum Architekten"
               tone="light"
               className="w-full justify-start sm:w-auto"
             />
@@ -150,18 +150,8 @@ export function SiteFooterReveal() {
           <div id="site-footer-links-col" className="min-w-0">
             <ul className="space-y-[clamp(0.18rem,0.42vw,0.32rem)]">
               <li>
-                <Link className={navClass} href="#projekte-section">
-                  Projekte
-                </Link>
-              </li>
-              <li>
-                <Link className={navClass} href="#profil-section">
-                  Profil
-                </Link>
-              </li>
-              <li>
-                <Link className={navClass} href="#blog-section">
-                  Blog
+                <Link className={navClass} href="#hero-section">
+                  Home
                 </Link>
               </li>
               <li>
@@ -170,8 +160,8 @@ export function SiteFooterReveal() {
                 </Link>
               </li>
               <li>
-                <Link className={navClass} href="#kunden-section">
-                  Kunden
+                <Link className={navClass} href="#team-section">
+                  Team
                 </Link>
               </li>
               <li>
@@ -179,25 +169,10 @@ export function SiteFooterReveal() {
                   Kontakt
                 </Link>
               </li>
-              <li>
-                <Link className={navClass} href="#english-section">
-                  English
-                </Link>
-              </li>
             </ul>
           </div>
           <div id="site-footer-sitemap-col" className="min-w-0">
             <ul className="space-y-[clamp(0.18rem,0.42vw,0.32rem)]">
-              <li>
-                <a
-                  className={navClass}
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </li>
               <li>
                 <a
                   className={navClass}
@@ -218,25 +193,43 @@ export function SiteFooterReveal() {
                   LinkedIn
                 </a>
               </li>
+              <li>
+                <a
+                  className={navClass}
+                  href="https://www.daumarchitekten.com/datenschutz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Datenschutz
+                </a>
+              </li>
+              <li>
+                <a
+                  className={navClass}
+                  href="https://www.daumarchitekten.com/impressum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Impressum
+                </a>
+              </li>
             </ul>
           </div>
           <div id="site-footer-contact-col" className="min-w-0 break-words">
             <p className="font-medium text-white">Kontakt:</p>
             <ul className="mt-[clamp(0.22rem,0.5vw,0.35rem)] space-y-[clamp(0.18rem,0.42vw,0.32rem)]">
-              <li>info@bauwerke.org</li>
-              <li>Telefon: +49 (0)30 300 96 70</li>
-              <li>Presse: presse@bauwerke.org</li>
+              <li>info@daumarchitekten.com</li>
+              <li>Berlin, Deutschland</li>
             </ul>
           </div>
           <div id="site-footer-social-col" className="min-w-0 break-words">
             <p className="font-medium text-white">Anschrift:</p>
             <ul className="mt-[clamp(0.22rem,0.5vw,0.35rem)] space-y-[clamp(0.18rem,0.42vw,0.32rem)]">
-              <li>BauWerke GmbH</li>
-              <li>Sophie-Charlotten-Str. 92-94</li>
-              <li>14059 Berlin | Deutschland</li>
+              <li>Daum Architekten PartG mbB</li>
+              <li>Berlin | Deutschland</li>
             </ul>
             <p className="mt-[clamp(0.8rem,1.5vw,1.1rem)]">
-              © BauWerke {new Date().getFullYear()}
+              © Daum Architekten {new Date().getFullYear()}
             </p>
           </div>
         </section>
@@ -246,7 +239,7 @@ export function SiteFooterReveal() {
           className="mt-[clamp(1rem,2.3vw,1.8rem)] border-t border-white/10 pt-[clamp(1rem,2.3vw,1.8rem)]"
         >
           <span className="block max-w-[100vw] font-sans font-black uppercase leading-[0.9] tracking-tighter text-white [font-size:clamp(1.75rem,8vw,9.5rem)]">
-            BAUWERK
+            DAUM ARCHITEKTEN
           </span>
         </div>
       </div>

@@ -9,28 +9,26 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bauwerke.org"),
+  metadataBase: new URL("https://www.daumarchitekten.com"),
   title: {
-    default: "BauWerke Berlin — Konzeption, Planung und Betreuung von Bauwerken",
-    template: "%s — BauWerke Berlin",
+    default: "Daum Architekten Berlin",
+    template: "%s — Daum Architekten Berlin",
   },
   description:
-    "BauWerke GmbH in Berlin — Gesellschaft für Konzeption, Planung und Betreuung von Bauwerken. Architecture, planning and project management for buildings, based in Berlin.",
-  applicationName: "BauWerke",
+    "Daum Architekten PartG mbB in Berlin. Architektur und Planung mit klarem gestalterischem Anspruch.",
+  applicationName: "Daum Architekten",
   keywords: [
-    "BauWerke",
-    "BauWerke GmbH",
-    "BauWerke Berlin",
+    "Daum Architekten",
+    "Daum Architekten Berlin",
     "Architektur Berlin",
     "Architekten Berlin",
     "Bauplanung",
-    "Projektsteuerung",
-    "Hochbau",
-    "Architecture Berlin",
+    "Generalplanung",
+    "Architekturbuero Berlin",
   ],
-  authors: [{ name: "BauWerke GmbH" }],
-  creator: "BauWerke GmbH",
-  publisher: "BauWerke GmbH",
+  authors: [{ name: "Daum Architekten PartG mbB" }],
+  creator: "Daum Architekten PartG mbB",
+  publisher: "Daum Architekten PartG mbB",
   category: "architecture",
   alternates: {
     canonical: "/",
@@ -44,16 +42,16 @@ export const metadata: Metadata = {
     locale: "de_DE",
     alternateLocale: ["en_US"],
     url: "/",
-    siteName: "BauWerke",
-    title: "BauWerke Berlin — Konzeption, Planung und Betreuung von Bauwerken",
+    siteName: "Daum Architekten",
+    title: "Daum Architekten Berlin",
     description:
-      "BauWerke GmbH in Berlin — Konzeption, Planung und Betreuung von Bauwerken. Architecture, planning and project management for buildings.",
+      "Daum Architekten PartG mbB in Berlin. Architektur und Planung mit klarem gestalterischem Anspruch.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BauWerke Berlin — Konzeption, Planung und Betreuung von Bauwerken",
+    title: "Daum Architekten Berlin",
     description:
-      "BauWerke GmbH in Berlin — Konzeption, Planung und Betreuung von Bauwerken.",
+      "Daum Architekten PartG mbB in Berlin. Architektur und Planung mit klarem gestalterischem Anspruch.",
   },
   robots: {
     index: true,
