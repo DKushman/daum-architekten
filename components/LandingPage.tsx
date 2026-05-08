@@ -183,12 +183,12 @@ const STUDIO_PROFIL_PILLARS: ProfilPillar[] = [
 ];
 
 const CHARACTERISTICS_DESKTOP_CARD_SIZE_CLASSES = [
-  "h-full w-full",
-  "h-full w-full",
-  "h-full w-full",
-  "h-full w-full",
-  "h-full w-full",
-  "h-full w-full",
+  "h-auto w-full",
+  "h-auto w-full",
+  "h-auto w-full",
+  "h-auto w-full",
+  "h-auto w-full",
+  "h-auto w-full",
 ] as const;
 
 const CHARACTERISTICS_DESKTOP_CARD_Z = [42, 40, 46, 44, 43, 39] as const;
@@ -975,7 +975,7 @@ export function LandingPage() {
 
                 <div
                   id="profil-section-canvas"
-                  className="relative mx-auto mt-[clamp(1.5rem,4vw,3rem)] grid h-auto w-full max-w-[74rem] auto-rows-[minmax(clamp(8.2rem,26vw,10.8rem),auto)] grid-cols-2 gap-[clamp(0.75rem,1.6vw,1.2rem)] overflow-visible md:h-[clamp(32rem,74vh,46rem)] md:auto-rows-auto md:grid-cols-12 md:grid-rows-10 md:gap-[clamp(0.45rem,1vw,0.85rem)]"
+                  className="relative mx-auto mt-[clamp(1.5rem,4vw,3rem)] grid h-auto w-full max-w-[74rem] auto-rows-[minmax(clamp(8.2rem,26vw,10.8rem),auto)] grid-cols-2 gap-[clamp(0.75rem,1.6vw,1.2rem)] overflow-visible md:auto-rows-[minmax(max-content,auto)] md:grid-cols-12 md:gap-[clamp(0.45rem,1vw,0.85rem)]"
                 >
                   {STUDIO_PROFIL_PILLARS.map((item, index) => {
                     return (
@@ -986,14 +986,14 @@ export function LandingPage() {
                         }}
                         id={`profil-section-card-${item.id}`}
                         className={
-                          "group relative overflow-hidden rounded-[clamp(0.9rem,2vw,1.4rem)] border border-black/10 bg-white p-[clamp(0.9rem,2vw,1.25rem)] shadow-[0_0.8rem_2.1rem_rgba(0,0,0,0.14)] transition-[transform,box-shadow,background-color,border-color] duration-650 ease-[cubic-bezier(0.16,1,0.3,1)] md:hover:z-[70] md:hover:-translate-y-[0.2rem] md:hover:overflow-visible md:hover:border-black/40 md:hover:bg-black md:hover:shadow-[0_1rem_2.3rem_rgba(0,0,0,0.2)] " +
+                          "group relative overflow-hidden rounded-[clamp(0.9rem,2vw,1.4rem)] border border-black/10 bg-white p-[clamp(0.9rem,2vw,1.25rem)] shadow-[0_0.8rem_2.1rem_rgba(0,0,0,0.14)] transition-[transform,box-shadow,background-color,border-color] duration-650 ease-[cubic-bezier(0.16,1,0.3,1)] md:hover:z-[70] md:hover:-translate-y-[0.2rem] md:hover:border-black/40 md:hover:bg-black md:hover:shadow-[0_1rem_2.3rem_rgba(0,0,0,0.2)] " +
                           (CHARACTERISTICS_GRID_AREA_CLASSES[index] ?? "col-span-1 row-auto md:col-[1/5] md:row-[1/4]") +
                           " " +
-                          (CHARACTERISTICS_DESKTOP_CARD_SIZE_CLASSES[index] ?? "h-full w-full")
+                          (CHARACTERISTICS_DESKTOP_CARD_SIZE_CLASSES[index] ?? "h-auto w-full")
                         }
                         style={{ zIndex: CHARACTERISTICS_DESKTOP_CARD_Z[index] ?? 40 }}
                       >
-                        <div className="relative flex h-full min-h-[clamp(6.8rem,12vw,9rem)] w-full flex-col">
+                        <div className="relative flex h-auto w-full flex-col">
                           <span className="inline-flex items-start justify-start">
                             <svg
                               id={`profil-section-icon-${item.id}`}
@@ -1014,7 +1014,7 @@ export function LandingPage() {
 
                           <div
                             id={`profil-section-content-${item.id}`}
-                            className="mt-[clamp(0.6rem,1.2vw,0.9rem)] block max-h-none opacity-100 transition-[max-height,opacity,transform] duration-650 ease-[cubic-bezier(0.16,1,0.3,1)] md:max-h-0 md:translate-y-[0.22rem] md:opacity-0 md:group-hover:max-h-[48rem] md:group-hover:translate-y-0 md:group-hover:opacity-100"
+                            className="mt-[clamp(0.6rem,1.2vw,0.9rem)] block"
                           >
                             <h3 className="font-sans text-[clamp(0.95rem,1.4vw,1.15rem)] font-semibold leading-[1.2] text-black transition-colors duration-650 ease-[cubic-bezier(0.16,1,0.3,1)] md:group-hover:text-white">
                               {item.title}
